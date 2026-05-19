@@ -1,4 +1,5 @@
 import Link from "./NavBar/Link";
+import { TextAlignEnd } from "lucide-react";
 
 const navigationData = [
   {
@@ -32,9 +33,12 @@ const navigationData = [
 const Navbar = () => {
   return (
     <nav className="flex justify-between items-center py-2 px-20">
-      <h3 className="text-3xl font-extrabold tracking-wide text-blue-600 cursor-pointer">
-        My<span className="text-black">NavBar</span>
-      </h3>
+      <span className="flex">
+        <TextAlignEnd />
+        <h3 className="text-3xl font-extrabold tracking-wide text-blue-600 cursor-pointer">
+          My<span className="text-black">NavBar</span>
+        </h3>
+      </span>
       <ul className="flex justify-center items-center">
         {navigationData.map((route) => (
           <Link key={route.id} route={route}></Link>

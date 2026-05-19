@@ -1,11 +1,13 @@
+import { CircleCheckBig } from "lucide-react";
 
-
-const PricingFeature = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+const PricingFeature = ({ feature }) => {
+  return (
+    <p className="text-lg text-white">
+      {" "}
+      <CircleCheckBig />
+      {feature}
+    </p>
+  );
 };
 
 export default PricingFeature;

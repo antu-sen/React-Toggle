@@ -1,0 +1,35 @@
+[
+    {
+      "planName": "Basic Membership",
+      "price": "1500 BDT/month",
+      "information": "Affordable starter plan for beginners.",
+      "features": [
+        "Full gym access",
+        "Cardio equipment",
+        "Locker access",
+        "Free Wi-Fi"
+      ]
+    },
+    {
+      "planName": "Standard Membership",
+      "price": "3000 BDT/month",
+      "information": "Best for regular fitness members.",
+      "features": [
+        "Everything in Basic",
+        "Group classes",
+        "Diet consultation",
+        "Fitness assessment"
+      ]
+    },
+    {
+      "planName": "Premium Membership",
+      "price": "5500 BDT/month",
+      "information": "Advanced fitness plan with personal coaching.",
+      "features": [
+        "Personal trainer",
+        "Custom workout plan",
+        "Priority support",
+        "Body analysis"
+      ]
+    }
+  ]

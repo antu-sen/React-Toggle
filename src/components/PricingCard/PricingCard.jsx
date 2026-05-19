@@ -1,7 +1,10 @@
-const PricingCard = () => {
+const PricingCard = ({pricing}) => {
+
+    console.log(pricing);
+    
     return (
         <div>
-            <h1>PricingCard</h1>
+      
             
         </div>
     );

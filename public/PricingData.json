@@ -3,6 +3,7 @@
       "planName": "Basic Membership",
       "price": "1500 BDT/month",
       "information": "Affordable starter plan for beginners.",
+      "id": 1, 
       "features": [
         "Full gym access",
         "Cardio equipment",
@@ -14,6 +15,7 @@
       "planName": "Standard Membership",
       "price": "3000 BDT/month",
       "information": "Best for regular fitness members.",
+      "id": 2,
       "features": [
         "Everything in Basic",
         "Group classes",
@@ -25,6 +27,7 @@
       "planName": "Premium Membership",
       "price": "5500 BDT/month",
       "information": "Advanced fitness plan with personal coaching.",
+      "id": 3,
       "features": [
         "Personal trainer",
         "Custom workout plan",

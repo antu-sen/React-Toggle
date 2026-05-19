@@ -1,5 +1,7 @@
+import { useState } from "react";
 import Link from "./NavBar/Link";
 import { TextAlignEnd } from "lucide-react";
+import { X } from "lucide-react";
 
 const navigationData = [
   {
@@ -31,10 +33,17 @@ const navigationData = [
 ];
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="flex justify-between items-center py-2 px-20">
-      <span className="flex">
-        <TextAlignEnd />
+      <span className="flex" onClick={() => setOpen(!open)}>
+        {open ? (
+          <X className="md:hidden"></X>
+        ) : (
+          <TextAlignEnd className="md:hidden"></TextAlignEnd>
+        )}
+
         <h3 className="text-3xl font-extrabold tracking-wide text-blue-600 cursor-pointer">
           My<span className="text-black">NavBar</span>
         </h3>

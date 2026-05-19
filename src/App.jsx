@@ -1,13 +1,24 @@
+import { Suspense } from "react";
 import Navbar from "./components/Navbar";
+import PricingOption from "./components/PricingOption/PricingOption";
 
+const pricingPromise = fetch("PricingData.json").then((response) =>
+  response.json()
+);
 function App() {
-  
-
-
   return (
     <>
-    <Navbar/>
-
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <Suspense
+          fallback={
+          <span className="loading loading-spinner text-error"></span>
+          }>
+          <PricingOption pricingPromise={pricingPromise}></PricingOption>
+        </Suspense>
+      </main>
     </>
   );
 }

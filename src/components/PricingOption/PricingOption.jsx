@@ -1,5 +1,10 @@
+import { use } from "react";
 
-const PricingOption = () => {
+
+const PricingOption = ({pricingPromise}) => {
+    const pricingData = use(pricingPromise);
+    console.log(pricingData);
+
     return (
         <div>
             

@@ -5,7 +5,7 @@ const PricingCard = ({ pricing }) => {
   console.log(pricing);
 
   return (
-    <div className="border border-b-blue-400 bg-amber-400 rounded-2xl p-4">
+    <div className="border border-b-blue-400 bg-amber-400 rounded-2xl p-8">
       {/* card header */}
       <div>
         <h1 className="text-4xl font-bold">{planName}</h1>

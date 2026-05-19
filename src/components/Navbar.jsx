@@ -32,6 +32,9 @@ const navigationData = [
 const Navbar = () => {
   return (
     <nav>
+      <h3 className="text-3xl font-extrabold tracking-wide text-blue-600 cursor-pointer">
+        My<span className="text-black">NavBar</span>
+      </h3>
       <ul className="flex justify-center items-center mt-2">
         {navigationData.map((route) => (
           <Link key={route.id} route={route}></Link>

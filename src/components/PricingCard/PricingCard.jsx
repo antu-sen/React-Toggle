@@ -16,8 +16,10 @@ const PricingCard = ({ pricing }) => {
         <p>{information}</p>
         {features.map((feature, index) => (
           <PricingFeature key={index} feature={feature}></PricingFeature>
-        ))}
+        ))
+        }
       </div>
+      <button className=" bg-emerald-400 w-full py-3 px-12 mt-8 rounded-lg text-2xl text-white cursor-pointer">Subscribe</button>
     </div>
   );
 };

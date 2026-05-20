@@ -11,7 +11,7 @@ const PricingOption = ({ pricingPromise }) => {
         Get Our Membership
       </h2>
 
-      <div className="grid md:grid-cols-3 gap-8 mt-5 md:px-12">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-5 md:px-12">
         {
         pricingData.map(pricing => <PricingCard key={pricing.id} pricing={pricing}>
 
